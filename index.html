@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="grid grid-cols-5 w-screen h-screen">
+      <div class="hidden md:block col-span-2 bg-[#1B2650]"></div>
+      <div class="flex items-center justify-center col-span-5 md:col-span-3">
+        <form
+          id="form"
+          class="flex flex-col items-center md:items-start gap-4 form w-[85%] md:w-[65%] h-[75%]"
+        >
+          <h1 class="text-3xl">Signup Form</h1>
+          <div class="flex flex-col mt-10 w-full">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-[100%] md:w-[80%] h-[40px] px-3 border-2 border-gray-300 rounded-md"
+            />
+            <p class="text-sm mt-1 text-red-500" id="name-error"></p>
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="name">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="w-[100%] md:w-[80%] h-[40px] px-3 border-2 border-gray-300 rounded-md"
+            />
+            <p class="text-sm mt-1 text-red-500" id="email-error"></p>
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="name">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="w-[100%] md:w-[80%] h-[40px] px-3 border-2 border-gray-300 rounded-md"
+            />
+            <p class="text-sm mt-1 text-red-500" id="password-error"></p>
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="name">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              class="w-[100%] md:w-[80%] h-[40px] px-3 border-2 border-gray-300 rounded-md"
+            />
+            <p
+              class="text-sm mt-1 text-red-500"
+              id="confirm-password-error"
+            ></p>
+          </div>
+          <button
+            class="w-[100%] md:w-[80%] mt-6 min-h-[40px] px-3 text-white bg-[#1B2650] rounded-md"
+          >
+            Signup
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./debounce.js"></script>
+  </body>
+</html>
+b
